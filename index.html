@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <title>Functions</title>
+</head>
+<body>
+
+
+    <div class="container" id="container">
+
+    <aside class="condition" id="condition" > 
+
+            <div id="condition1"> 
+                
+                <p> შექმენი 'button' და div ელემენტები და მიანიჭეთ საკუთარი უნიკალური id,
+                    div - ში ჩაწერე პატარა random ტექსტი ,ღილაკზე დაჭერის შემთხვევაში დამალე div ელემენტი.
+                </p>
+                
+                
+                </div>
+            <div id="condition2">
+                <p>
+                    შექმენი შემდეგი სტრუქტურა JS -ის გამოყენებით და დაამატე DOM-ში:
+      <pre>
+     &lt;div id=”card”&gt;                      
+        &lt;h2&gt;Gandalf&lt;/h2&gt;
+        &lt;a href=”#”&gt;Go to profile&lt;/a&gt;
+     &lt;/div&gt;
+         </pre>
+                    
+                </p>
+
+            </div>
+            <div id="condition3">
+                <p>
+              </p>
+            </div>
+    
+    </aside>
+
+            <div  class="cont" id="cont"> 
+
+                <div class="buttons">
+                <button id="homework1">Homework 1</button>
+                <button id="homework2">Homework 2</button>
+                <button id="homework3">Quiz </button>
+                </div>
+
+                    <div class="back" id="back">
+                        <a  href="index.html"> <h6>Back</h6> </a>                  
+                    </div>
+                
+
+                    
+                </div>
+                <div class="window" id="window1"></div>
+                <div class="window" id="window2"></div>
+
+
+
+
+                    <!-- win3-->
+                <div class="window" id="window3">
+
+
+
+
+                    <div class="firstPage" id="firstPage">
+
+                      <div id="formcontainer">
+                        <input type="text" id="nickname" placeholder="Enter Nickname" name="name">
+                        <button class="start" type="submit" id="start">Start</button>
+                      </div>
+
+                      
+                      <div class="questionNumber" id="questionNumber"></div>
+
+
+                            <div class="questionAnswer" id="questionAnswer"> 
+                                    <div class="question" id="question"> </div>     
+
+                                    <div class="allanswersbtn" id="allanswersbtn">
+                                            
+                                        <button class="answer" id="answer1" data-index="0">1.</button>
+                                        <button class="answer" id="answer2" data-index="1">2.</button>
+                                        <button class="answer" id="answer3" data-index="2">3.</button>
+                                        <button class="answer" id="answer4" data-index="3">4.</button>
+                                    </div>
+                                    <button class="nextbutton" id="nextbutton">Next</button>
+                            </div>
+
+
+                            <div class="result" id="result"> 
+
+                                <h2 id="resultname">name</h2>
+                                <p>Your result is</p>
+                                 <p id="score">0</p>
+                            </div>
+
+                     </div>
+
+
+
+                 
+
+
+
+
+                </div>
+                    <!-- win3-->
+
+
+
+
+
+
+ <aside class="functions" id="functions">
+
+
+ <div id="function1">
+<pre>
+const divEl = document.createElement('div')
+const buttonEl = document.createElement('button')
+
+const textEl2 = document.createTextNode('Front-end development')
+const textEl1 = document.createTextNode('Hide/Show')
+
+buttonEl.setAttribute('id', 'btn', )
+divEl.setAttribute('id', "divId")
+
+buttonEl.append(textEl1)
+divEl.append(textEl2)
+window1.append(divEl,buttonEl)
+
+
+btn.addEventListener("click", () => {
+    
+    if (divEl.style.display === 'none') {
+        divEl.style.display = 'block';
+    } else {
+        divEl.style.display = 'none';
+    }
+});
+</pre>
+
+
+                        </div>
+                        
+
+
+                       <div id="function2">
+<pre>
+const divcardEl = document.createElement('div')
+const h2El = document.createElement('h2')
+const ahrefEl = document.createElement('a')
+
+const textEl3 =document.createTextNode ('Gendalf')
+const textEl4 = document.createTextNode('Go to profile')
+
+
+ahrefEl.setAttribute('href',"#")
+divcardEl.setAttribute('id', "lotr")
+
+
+h2El.append (textEl3)
+ahrefEl.append(textEl4)
+divcardEl.append(h2El,ahrefEl)
+
+window2.append(divcardEl)
+</pre>
+                       
+    
+
+                   
+
+                       </div> 
+
+
+
+                       <div id="function3">
+
+
+
+
+                       </div> 
+            
+            </aside>
+            
+        </div>
+          
+
+            
+    <script src="app.js"></script>
+</body>
+</html>
